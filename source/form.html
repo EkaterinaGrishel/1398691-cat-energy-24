@@ -13,42 +13,48 @@
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
             <ul class="main-nav__list site-list">
                 <li class="site-list__item site-list__item">
                     <a href="index.html">Главная</a>
                 </li>
                 <li class="site-list__item">
-                    <a>Каталог продукции</a>
+                    <a href="catalog.html">Каталог продукции</a>
                 </li>
-                <li class="site-list__item--active">
+                <li class="site-list__item site-list__item--active">
                     <a href="form.html">Подбор программы</a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <main class="page-main page-main--inner">
         <section class="page-form">
             <h1 class="page-title">Подбор программы</h1>
             <p class="page-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
             <form class="form" action="https://echo.htmlacademy.ru" method="post">
-                <p class="form__field cat-data">
-                    <label class="cat-data__label" for="name">Имя:*</label>
-                    <input class="cat-data__input" id="name" type="text" name="name" placeholder="Барсик" required>
-                </p>
-                <p class="form__field cat-data">
-                    <label class="cat-data__label" for="weight">Вес (кг):*</label>
-                    <input class="cat-data__input" id="weight" type="text" name="weight" placeholder="7" required>
-                </p>
-                <p class="form__field cat-data">
-                    <label class="cat-data__label" for="age">Возраст (лет):</label>
-                    <input class="cat-data__input" id="age" type="text" name="age" placeholder="7">
-                </p>
+
+                <fieldset class="form__group">
+                    <legend class="visually-hidden">Анкета кота</legend>
+                    <div class="form__field text-field">
+                        <label class="text-field__label" for="name">Имя:*</label>
+                        <input class="text-field__input" id="name" type="text" name="name" placeholder="Барсик" required>
+                    </div>
+                    <div class="form__field text-field">
+                        <label class="text-field__label" for="weight">Вес (кг):*</label>
+                        <input class="text-field__input" id="weight" type="text" name="weight" placeholder="7" required>
+                    </div>
+                    <div class="form__field text-field">
+                        <label class="text-field__label" for="age">Возраст (лет):</label>
+                        <input class="text-field__input" id="age" type="text" name="age" placeholder="7">
+                    </div>
+                </fieldset>
+
                 <fieldset class="form__program">
                     <legend class="visually-hidden">Выбор программы</legend>
                     <ul class="form__program-list">
-                        <li class="form__program-item">
+                        <li class="form__program-item radio-input">
                             <input class="form__program-input" type="radio" name="program" id="slimming" value="slimming" checked>
                             <label class="form__program-label" for="slimming">Похудение</label>
                         </li>
@@ -62,9 +68,10 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="form__contact">
-                    <legend class="form__contact-title">Контактные данные (владельца кота)</legend>
-                    <ul class="form__contact-list">
+
+                <fieldset class="form__group">
+                    <legend class="fform__group-title">Контактные данные (владельца кота)</legend>
+                    <ul class="form__list">
                         <li class="form__contact-item">
                             <label class="form__contact-label" for="email">E-mail:*</label>
                             <input class="form__contact-input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -75,12 +82,22 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="form__comment">
-                    <legend class="form__comment-title">Комментарий</legend>
-                    <textarea class="form__comment-textarea" name="habits" id="habits" placeholder="Расскажите обо всех повадках кота"></textarea>
+
+                <fieldset class="form__group">
+                    <legend class="form__group-title">Комментарий</legend>
+                    <div class="text-field textarea">
+                        <label>
+                          <textarea class="text-field__input"
+                          name="habits"
+                          id="habits"
+                          placeholder="Расскажите обо всех повадках кота"
+                          ></textarea>
+                        </label>
+                    </div>
                 </fieldset>
-                <fieldset class="form__info">
-                    <legend class="form__info-title">Дополнительно</legend>
+
+                <fieldset class="form__group">
+                    <legend class="form__group-title">Дополнительно</legend>
                     <ul class="form__info-list">
                         <li class="form__info-item">
                             <input class="form__info-input form__info-checkbox" type="checkbox" name="sweetener" id="sweetener" value="sweetener" checked>
@@ -100,12 +117,11 @@
                         </li>
                     </ul>
                 </fieldset>
-                <div class="form__send">
-                    <button class="form__send-button" type="submit">Отправить заявку</button>
-                    <p class="form__send-text">*— Обязательные поля</p>
-                </div>
+                <button class="form__button button button--primary" type="submit">Отправить заявку</button>
+                <p class="form__note">*— Обязательные поля</p>
             </form>
         </section>
+
         <section class="contacts">
             <div class="contacts__wrapper">
                 <h4 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h4>
@@ -118,6 +134,7 @@
             <h5 class="visually-hidden">Карта</h5>
         </section>
     </main>
+
     <footer class="page-footer">
         <div class="page-footer__wrapper">
             <a class="page-footer__logo">
