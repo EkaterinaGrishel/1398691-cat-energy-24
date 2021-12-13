@@ -1,0 +1,19 @@
+.button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $base-light-color;
+
+  &--primary {
+    background-color: $bg-color;
+  }
+
+  &--secondary {
+    background-color: $extra-light-color;
+  }
+}
