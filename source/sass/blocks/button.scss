@@ -1,0 +1,22 @@
+.button {
+  font-family: $custom-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basik-white;
+  background-color: rgba($basik-white, 0);
+  border: none;
+  border-radius: 0;
+
+  &--primary {
+    background-color: $basik-green;
+    padding: 7px 25px;
+  }
+
+  &--secondary {
+    background-color: $basik-grey-2;
+  }
+}

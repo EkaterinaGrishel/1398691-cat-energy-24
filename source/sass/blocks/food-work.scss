@@ -1,12 +1,14 @@
-.example {
-  background-color: $special-light-grey;
+.food-work__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.example__description {
+.food-work__description {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: $special-dark-grey;
+  color: $special-grey-2;
 }
