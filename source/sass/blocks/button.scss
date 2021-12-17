@@ -10,13 +10,16 @@
   background-color: rgba($basik-white, 0);
   border: none;
   border-radius: 0;
+  display: block;
 
   &--primary {
     background-color: $basik-green;
-    padding: 7px 25px;
+    padding: 7px 0px;
   }
 
   &--secondary {
     background-color: $basik-grey-2;
+    color: $special-dark-grey;
+    padding: 10px 0;
   }
 }

@@ -4,19 +4,25 @@
     url("../img/promo-cat.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  font-family: $custom-font;
   color: $basik-white;
   text-align: center;
   padding: 27px 0 20px;
 }
 
 .promo__slogan {
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .promo__text {
   font-size: 14px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .promo__button {

@@ -1,0 +1,26 @@
+.additional-product {
+  padding: 13px 0 19px;
+}
+
+.additional-product__title {
+  font-family: $custom-font;
+  color: $special-dark-grey-2;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.additional-product__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special-dark-grey;
+}
+
+.additional-product__price {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special-dark-grey;
+}

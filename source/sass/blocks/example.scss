@@ -1,3 +1,25 @@
 .example {
   background-color: $special-grey;
+  padding: 25px 20px 40px;
+}
+
+.example__number {
+  font-family: $custom-font;
+  font-size: 24px;
+  color: $basik-black;
+  text-transform: uppercase;
+}
+
+.example__info {
+  font-size: 12px;
+  color: $special-dark-grey;
+}
+
+.example__text {
+  font-family: $custom-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basik-black;
+  text-align: center;
 }
