@@ -6,20 +6,20 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: $basik-white;
-  background-color: rgba($basik-white, 0);
+  color: $basic-white;
+  background-color: rgba($basic-white, 0);
   border: none;
   border-radius: 0;
   display: block;
 
   &--primary {
-    background-color: $basik-green;
-    padding: 7px 0;
+    background-color: $basic-green;
+    padding: 7px 20px;
   }
 
   &--secondary {
-    background-color: $basik-grey-2;
+    background-color: $basic-grey-2;
     color: $special-dark-grey;
-    padding: 10px 0;
+    padding: 10px 20px;
   }
 }

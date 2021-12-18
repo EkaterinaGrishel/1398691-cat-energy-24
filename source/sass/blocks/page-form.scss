@@ -1,5 +1,6 @@
 .page-form {
-  padding: 27px 20px 32px;
+  padding-top: 27px;
+  padding-bottom: 32px;
   font-family: $custom-font;
   font-weight: normal;
   font-size: 16px;
@@ -11,14 +12,14 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  color: $basik-black;
+  color: $basic-black;
   margin: 0;
   margin-bottom: 37px;
   text-transform: none;
 }
 
 .page-form__description {
-  color: $basik-black;
+  color: $basic-black;
   font-size: 14px;
   margin: 0;
   margin-bottom: 39px;

@@ -1,20 +1,25 @@
+.form {
+  margin: 0;
+  padding: 0;
+}
+
 .form__group {
   margin: 0;
-
-  &--name {
-    border: none;
-  }
+  padding: 0;
+  border: none;
 }
 
 .form__group-title {
   font-size: 24px;
   line-height: 26px;
-  color: $basik-black;
+  color: $basic-black;
   text-transform: none;
 }
 
 .form__program {
   margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .form__note {
@@ -22,5 +27,9 @@
   font-family: $default-font;
   font-size: 14px;
   line-height: 16px;
-  color: $basik-black;
+  color: $basic-black;
+}
+
+.form__button {
+  width: 100%;
 }

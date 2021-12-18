@@ -8,7 +8,7 @@
 </head>
 
 <body class="page__body">
-<header class="page-header">
+<header class="page-header container">
   <a class="page-header__logo" href="index.html">
     <img src="img/header-logo-mobile.svg" width="101" height="18" alt="Кэт энерджи»">
   </a>
@@ -28,10 +28,10 @@
       </li>
     </ul>
   </nav>
-</header
+</header>
 
 <main class="page-main page-main--inner">
-  <section class="page-form">
+  <section class="page-form container">
     <h1 class="page-form__title">Подбор программы</h1>
     <p class="page-form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
@@ -55,16 +55,19 @@
       <fieldset class="form__program">
         <legend class="visually-hidden">Выбор программы</legend>
         <ul class="form__program-list list-reset">
-          <li class="form__program-item radio-input">
-            <input class="form__program-input" type="radio" name="program" id="slimming" value="slimming" checked>
+          <li class="form__program-item">
+            <input class="form__program-input radio-input visually-hidden
+}" type="radio" name="program" id="slimming" value="slimming" checked>
             <label class="form__program-label" for="slimming">Похудение</label>
           </li>
           <li class="form__program-item">
-            <input class="form__program-input" type="radio" name="program" id="weight-gain" value="weight-gain">
+            <input class="form__program-input radio-input visually-hidden
+}" type="radio" name="program" id="weight-gain" value="weight-gain">
             <label class="form__program-label" for="weight-gain">Набор массы</label>
           </li>
           <li class="form__program-item">
-            <input class="form__program-input" type="radio" name="program" id="advice" value="advice">
+            <input class="form__program-input radio-input visually-hidden
+}" type="radio" name="program" id="advice" value="advice">
             <label class="form__program-label" for="advice">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
@@ -88,7 +91,7 @@
         <legend class="form__group-title">Комментарий</legend>
         <div class="text-field textarea">
           <label>
-            <textarea class="text-field__input"
+            <textarea class="text-field__input "
                       name="habits"
                       id="habits"
                       placeholder="Расскажите обо всех повадках кота"
@@ -101,19 +104,23 @@
         <legend class="form__group-title">Дополнительно</legend>
         <ul class="form__info-list list-reset">
           <li class="form__info-item">
-            <input class="form__info-input form__info-checkbox" type="checkbox" name="sweetener" id="sweetener" value="sweetener" checked>
+            <input class="form__info-input form__info-checkbox visually-hidden
+}" type="checkbox" name="sweetener" id="sweetener" value="sweetener" checked>
             <label class="form__info-label" for="sweetener">Сахарозаменитель</label>
           </li>
           <li class="form__info-item">
-            <input class="form__info-input form__info-checkbox" type="checkbox" name="water" id="water" value="water">
+            <input class="form__info-input form__info-checkbox visually-hidden
+}" type="checkbox" name="water" id="water" value="water">
             <label class="form__info-label" for="water">Питьевая вода</label>
           </li>
           <li class="form__info-item">
-            <input class="form__info-input form__info-checkbox" type="checkbox" name="milk" id="milk" value="milk">
+            <input class="form__info-input form__info-checkbox visually-hidden
+}" type="checkbox" name="milk" id="milk" value="milk">
             <label class="form__info-label" for="milk">Молоко</label>
           </li>
           <li class="form__info-item">
-            <input class="form__info-input form__info-checkbox" type="checkbox" name="vitamins" id="vitamins" value="vitamins">
+            <input class="form__info-input form__info-checkbox visually-hidden
+}" type="checkbox" name="vitamins" id="vitamins" value="vitamins">
             <label class="form__info-label" for="vitamins">Витамины</label>
           </li>
         </ul>
@@ -124,7 +131,7 @@
   </section>
 
   <section class="contacts">
-    <div class="contacts__wrapper">
+    <div class="contacts__wrapper container">
       <h4 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h4>
       <p class="contacts__text">
         ул. Большая Конюшенная 19/8<br> г. Санкт-Петербург
@@ -138,7 +145,7 @@
 </main>
 
 <footer class="page-footer">
-  <div class="page-footer__wrapper">
+  <div class="page-footer__wrapper container">
     <a class="page-footer__logo">
       <img src="img/footer-logo-mobile.svg" width="128" height="24" alt="Кэт энерджи»">
     </a>
