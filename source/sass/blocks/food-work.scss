@@ -1,0 +1,23 @@
+.food-work {
+  padding-top: 20px;
+  padding-bottom: 49px;
+}
+
+.food-work__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.food-work__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.food-work__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey-2;
+}

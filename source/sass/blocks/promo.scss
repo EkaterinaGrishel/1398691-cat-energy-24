@@ -1,0 +1,27 @@
+.promo {
+  background-image:
+    linear-gradient(to right, rgba($basic-green, 0.85) 0%, rgba($basic-green, 0.85) 100%),
+    url("../img/promo-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: $custom-font;
+  color: $basic-white;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 20px;
+}
+
+.promo__slogan {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.promo__text {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+}
