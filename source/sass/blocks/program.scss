@@ -1,10 +1,18 @@
 .program {
   background-color: $basic-grey;
   padding: 30px 33px 18px 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
-.program:not(:last-child) {
-  margin-bottom: 20px;
+@media (min-width: $desktop-width) {
+  .program {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .program__title {
@@ -21,9 +29,11 @@
 .program__description {
   margin: 0;
   margin-bottom: 29px;
+  color: $special-dark-grey;
 }
 
 .program__link {
+  font-family: $custom-font;
   font-size: 16px;
   line-height: 16px;
   text-align: center;

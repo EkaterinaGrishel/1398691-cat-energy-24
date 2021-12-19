@@ -11,6 +11,14 @@
   padding-bottom: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .promo {
+    background-image: none;
+    color: $basic-black;
+    text-align: left;
+  }
+}
+
 .promo__slogan {
   font-weight: 400;
   font-size: 36px;
@@ -19,9 +27,34 @@
   margin-bottom: 25px;
 }
 
+@media (min-width: $tablet-width) {
+  .promo__slogan {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+  }
+}
+
 .promo__text {
-  font-size: 14px;
   text-transform: uppercase;
+  line-height: 14px;
   margin: 0;
   margin-bottom: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__text {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__button {
+    max-width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+  }
 }

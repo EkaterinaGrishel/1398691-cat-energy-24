@@ -9,8 +9,27 @@
   margin: 0;
 }
 
-.food-work__item:not(:last-child) {
-  margin-bottom: 20px;
+@media (min-width: $tablet-width) {
+  .food-work__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 137px;
+    grid-row-gap: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-work__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 137px;
+  }
+}
+
+.food-work__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .food-work__description {
@@ -19,5 +38,5 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: $special-dark-grey-2;
+  color: $special-dark-grey;
 }

@@ -10,8 +10,31 @@
   font-weight: normal;
   text-transform: uppercase;
   color: $special-dark;
+  min-width: 50%;
+  margin: 0;
 }
 
 .contacts__text {
   line-height: 20px;
+  margin: 0;
+  min-width: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__text {
+    text-align: right;
+  }
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    justify-content: space-between;
+  }
 }
