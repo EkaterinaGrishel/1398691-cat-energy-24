@@ -1,4 +1,4 @@
-.promotion {
+.promotion__wrapper {
   background-image:
     linear-gradient(to right, rgba($basic-green, 0.85) 0%, rgba($basic-green, 0.85) 100%),
     url("../img/promotion-cat.png");
@@ -6,7 +6,7 @@
   background-position: center;
   padding-top: 60px;
   padding-bottom: 43px;
-  margin: 35px 20px;
+  margin: 0;
 }
 
 .promotion__title {

@@ -21,8 +21,8 @@
 @media (min-width: $desktop-width) {
   .food-work__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 137px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 80px;
   }
 }
 
@@ -33,10 +33,5 @@
 }
 
 .food-work__description {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: $special-dark-grey;
+  margin: 0;
 }

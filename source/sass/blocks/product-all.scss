@@ -1,0 +1,17 @@
+@media (min-width: $tablet-width) {
+  .product-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 63px;
+  }
+}
