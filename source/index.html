@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -35,8 +36,8 @@
   <section class="promo container">
     <h2 class="promo__slogan">Функциональное<br> питание для котов</h2>
     <p class="promo__text">Занялся собой? Займись котом!</p>
-    <div>
-    <img src="img/promo-pack-of-food.png" alt="Банка с кормом">
+    <div class="promo__image">
+    <img src="img/promo-pack-of-food-mobile.png" alt="Банка с кормом">
     </div>
     <a class="promo__button button button--primary" href="form.html">Подобрать программу</a>
   </section>
@@ -79,31 +80,33 @@
       <div class="example__stats">
         <h2 class="example__title title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__data stats">
-          <span class="example__number">
-            5 кг
-          </span>
-          <span class="example__info">
-            снижение веса
-          </span>
-          <span class="example__number">
-            60 дней
-          </span>
-          <span class="example__info">
-            затрачено времени
-          </span>
+        <div class="example__block">
+          <div class="example__data">
+            <span class="example__number">
+              5 кг
+            </span>
+            <span class="example__info">
+              снижение веса
+            </span>
+            <span class="example__number">
+              60 дней
+            </span>
+            <span class="example__info">
+              затрачено времени
+            </span>
+          </div>
+          <p class="example__text">Затраты на питание: 15 000 РУБ. </p>
         </div>
-        <p class="example__text">Затраты на питание: 15 000 РУБ. </p>
       </div>
       <div class="example__slider slider">
         <img src="img/before-mobile%201.png" width="280" height="232" alt="Кот большой">
         <div class="example__slider-wrapper">
-          <button class="slider__button" type="button">Было</button>
+          <button class="slider__button button" type="button">Было</button>
           <div class="slider__control-scale">
             <div class="slider__active">
             </div>
           </div>
-        <button class="slider__button" type="button">Стало</button>
+        <button class="slider__button button" type="button">Стало</button>
         </div>
       </div>
     </div>
@@ -111,15 +114,20 @@
 
   <section class="contacts">
     <div class="contacts__wrapper container">
-      <h4 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h4>
+      <h4 class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h4>
       <p class="contacts__text">
-        ул. Большая Конюшенная 19/8<br> г. Санкт-Петербург
+        ул. Большая<br> Конюшенная 19/8<br> г. Санкт-Петербург
       </p>
     </div>
   </section>
 
   <section class="map">
     <h5 class="visually-hidden">Карта</h5>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1631377334810!5m2!1sru!2sby "
+              width="100%"
+              height="100%"
+              style="border: 0;" allowfullscreen=" " loading="lazy ">
+      </iframe>
   </section>
 </main>
 
@@ -130,13 +138,13 @@
     </a>
     <ul class="page-footer__social social-list list-reset">
       <li class="social-list__item">
-        <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+        <a class="social-list__link social-list__link--vkontakte visually-hidden" href="https://vk.com/htmlacademy">Вконтакте</a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+        <a class="social-list__link social-list__link--instagram visually-hidden" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+        <a class="social-list__link social-list__link--facebook visually-hidden" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
       </li>
     </ul>
     <div class="page-footer__copyright copyright">

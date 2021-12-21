@@ -1,4 +1,7 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: $custom-font;
   font-style: normal;
   font-weight: normal;
@@ -10,7 +13,6 @@
   background-color: rgba($basic-white, 0);
   border: none;
   border-radius: 0;
-  display: block;
 
   &--primary {
     background-color: $basic-green;

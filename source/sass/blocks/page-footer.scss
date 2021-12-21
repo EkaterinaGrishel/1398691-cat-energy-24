@@ -2,4 +2,16 @@
   background-color: $basic-grey-2;
   padding-top: 39px;
   padding-bottom: 22px;
+  text-align: center;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }

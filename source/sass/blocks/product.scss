@@ -1,5 +1,16 @@
-.product:last-child {
-  text-align: center;
+.product {
+  margin-bottom: 19px;
+
+  &:last-child {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    margin-bottom: 0;
+  }
 }
 
 .product__title {

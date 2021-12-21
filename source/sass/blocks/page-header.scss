@@ -1,0 +1,19 @@
+.page-header {
+  padding-top: 10px;
+  padding-bottom: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 53px;
+  }
+}
