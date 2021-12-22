@@ -7,6 +7,12 @@
   font-family: $custom-font;
   font-weight: normal;
   font-size: 24px;
-  text-align: center;
   color: $basic-black;
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__flex-block {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+  }
 }

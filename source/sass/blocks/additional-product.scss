@@ -2,6 +2,21 @@
   padding: 13px 0 19px;
 }
 
+@media (min-width: $tablet-width) {
+  .additional-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-right: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-product {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .additional-product__title {
   font-family: $custom-font;
   color: $special-dark-grey-2;
@@ -23,4 +38,16 @@
   font-size: 14px;
   line-height: 14px;
   color: $special-dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-product__button {
+    grid-column: 1/4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-product__button {
+    grid-column: 4;
+  }
 }

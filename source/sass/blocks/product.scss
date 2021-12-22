@@ -10,6 +10,8 @@
 @media (min-width: $tablet-width) {
   .product {
     margin-bottom: 0;
+    text-align: center;
+    padding: 0 39px 39px;
   }
 }
 
@@ -22,8 +24,21 @@
   color: $special-dark-grey-2;
 }
 
-.product__stats {
+@media (min-width: $tablet-width) {
+  .product__title br {
+    display: none;
+  }
+}
+
+.product__list {
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .product__item {
+    display: flex;
+    justify-content: space-between;
+  }
 }
