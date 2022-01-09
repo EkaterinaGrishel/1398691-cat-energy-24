@@ -22,9 +22,7 @@
 .example__data {
   width: 124px;
   text-align: center;
-}
 
-.example__data {
   &:first-child {
     margin-right: 32px;
   }
@@ -75,8 +73,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background-image:
-      linear-gradient(to bottom, $basic-white 0%, $basic-white 619px, $special-grey 619px);
+    background-image: linear-gradient(to bottom, $basic-white 0%, $basic-white 619px, $special-grey 619px);
     border-top: 1px solid $exrra-grey;
     padding: 43px 0 56px;
   }
@@ -145,12 +142,11 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background-image:
-      linear-gradient(to bottom, $basic-white 0%, $basic-white 205px, $special-grey 205px);
+    background-image: linear-gradient(to bottom, $basic-white 0%, $basic-white 205px, $special-grey 205px);
     border-top: none;
     padding: 26px 0 65px;
   }
-  
+
   .example__wrapper {
     display: flex;
   }
@@ -195,5 +191,4 @@
   .example__slider-image {
     margin-bottom: 15px;
   }
-
 }

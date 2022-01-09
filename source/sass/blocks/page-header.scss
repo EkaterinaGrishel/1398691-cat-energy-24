@@ -27,8 +27,9 @@
       content: "";
       width: 50%;
       height: 694px;
-      background-image: url("../img/promo-desktop.png"),
-      linear-gradient(to right, rgba($basic-green, 0.85) 0%, rgba($basic-green, 0.85) 100%);
+      background-image:
+        url("../img/promo-desktop.png"),
+        linear-gradient(to right, rgba($basic-green, 0.85) 0%, rgba($basic-green, 0.85) 100%);
       background-repeat: no-repeat;
       background-position: right;
       position: absolute;
