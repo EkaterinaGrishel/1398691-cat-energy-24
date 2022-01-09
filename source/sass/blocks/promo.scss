@@ -1,7 +1,7 @@
 .promo {
   background-image:
-    linear-gradient(to right, rgba($basic-green, 0.85) 0%, rgba($basic-green, 0.85) 100%),
-    url("../img/promo-cat.jpg");
+    url("../img/promo-mobile.png"),
+    linear-gradient(to bottom, $basic-white 0%, $special-green 302px, $basic-white 302px);
   background-repeat: no-repeat;
   background-position: top;
   font-family: $custom-font;
@@ -9,23 +9,6 @@
   text-align: center;
   padding-top: 27px;
   padding-bottom: 20px;
-  position: relative;
-}
-
-@media (min-width: $tablet-width) {
-  .promo {
-    background-image: none;
-    color: $basic-black;
-    text-align: left;
-    padding-left: 117px;
-    padding-bottom: 526px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo {
-    padding-left: 190px;
-  }
 }
 
 .promo__slogan {
@@ -36,14 +19,6 @@
   margin-bottom: 25px;
 }
 
-@media (min-width: $tablet-width) {
-  .promo__slogan {
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 41px;
-  }
-}
-
 .promo__text {
   text-transform: uppercase;
   line-height: 14px;
@@ -51,27 +26,73 @@
   margin-bottom: 29px;
 }
 
-@media (min-width: $tablet-width) {
-  .promo__text {
-    font-size: 20px;
-    line-height: 20px;
-    margin-bottom: 20px;
-  }
+.promo__image img {
+  width: 100%; // TODO посмотри здесь ширину
+  height: 100%;
 }
 
 @media (min-width: $tablet-width) {
+  .promo {
+    background-image: none;
+    color: $basic-black;
+    text-align: left;
+    padding-left: 80px;
+    padding-bottom: 526px;
+    position: relative;
+  }
+
+  .promo__slogan {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+  }
+
+  .promo__text {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 49px;
+  }
+
   .promo__image {
     position: absolute;
     bottom: 0;
-    left: 40%;
+    left: 50%;
+    margin-left: -355px;
+    margin-top: -305px;
+    width: 709px; // TODO посмотри здесь ширину без стр. 30 не работает
+    height: 609px;
+    z-index: -1;
   }
-}
 
-@media (min-width: $tablet-width) {
   .promo__button {
     max-width: 244px;
     font-size: 20px;
     line-height: 20px;
     padding: 14px 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    padding: 0 0 202px 110px;
+    margin: 0 auto 82px;
+  }
+
+  .promo__slogan {
+    margin-top: 111px;
+    margin-bottom: 40px;
+  }
+
+  .promo__text {
+    margin-bottom: 52px;
+  }
+
+  .promo__image {
+    width: 552px; // TODO посмотри здесь ширину без стр. 30 не работает
+    height: 499px;
+    z-index: 0;
+    top: -100px;
+    left: 39%;
+    margin: 0 auto;
   }
 }

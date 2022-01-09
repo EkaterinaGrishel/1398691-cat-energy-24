@@ -4,12 +4,6 @@
   max-width: $desktop-width;
 }
 
-@media (max-width: $tablet-width) {
-  .container--opened {
-    padding: 0;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .container {
     padding: 0 30px;

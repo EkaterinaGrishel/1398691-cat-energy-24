@@ -3,6 +3,13 @@
   text-align: center;
 }
 
+.page-header__logo {
+  display: block;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
@@ -20,8 +27,8 @@
       content: "";
       width: 50%;
       height: 694px;
-      background-image: linear-gradient(to right, rgba($basic-green, 0.85) 0%, rgba($basic-green, 0.85) 100%),
-        url("../img/index-background-desktop 1.png");
+      background-image: url("../img/promo-desktop.png"),
+      linear-gradient(to right, rgba($basic-green, 0.85) 0%, rgba($basic-green, 0.85) 100%);
       background-repeat: no-repeat;
       background-position: right;
       position: absolute;
@@ -29,11 +36,10 @@
       top: 0;
     }
   }
-}
 
-.page-header__logo {
-  display: block;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  .page-header__logo {
+    width: 50%;
+    text-align: left;
+    padding-top: 0;
+  }
 }

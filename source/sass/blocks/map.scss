@@ -3,3 +3,13 @@
   display: block;
   min-height: 362px;
 }
+
+@media (min-width: $desktop-width) {
+  .map {
+    position: relative;
+    top: 0;
+    height: 449px;
+    width: 100%;
+    z-index: -2;
+  }
+}

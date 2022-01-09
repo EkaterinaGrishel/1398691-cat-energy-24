@@ -7,3 +7,10 @@
   margin: 0;
   margin-bottom: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
