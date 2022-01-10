@@ -1,6 +1,11 @@
 .programs {
   padding-top: 20px;
-  padding-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    padding-top: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {

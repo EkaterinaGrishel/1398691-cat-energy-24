@@ -2,4 +2,19 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  border-bottom: 1px solid $basic-grey;
+  border-top: 1px solid $basic-grey;
+  padding: 20px 0 21px;
+  align-items: center;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    border: none;
+    padding: 0;
+  }
 }

@@ -1,16 +1,29 @@
 .program {
-  background-color: $basic-grey;
+  background-color: $basic-grey-2;
   padding: 30px 33px 18px 20px;
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 20px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .program {
-    &:not(:last-child) {
-      margin-bottom: 0;
+  &--slimming {
+    &::before {
+      content: url("../img/cat_slimming.png");
+      position: absolute;
+      top: 20px;
+      width: 50px;
+      height: 53px;
+    }
+  }
+
+  &--weight {
+    &::before {
+      content: url("../img/cat_weight.png");
+      position: absolute;
+      top: 20px;
+      width: 67px;
+      height: 50px;
     }
   }
 }
@@ -24,12 +37,15 @@
   color: $basic-black;
   margin: 0;
   margin-bottom: 29px;
+  padding-left: 87px;
 }
 
 .program__description {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 15px;
   color: $special-dark-grey;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $basic-grey;
 }
 
 .program__link {
@@ -40,4 +56,99 @@
   text-transform: uppercase;
   color: $basic-black;
   margin: 0;
+  position: relative;
+
+  &::after {
+    content: url("../img/icons/arrow.svg");
+    position: absolute;
+    display: inline-block;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    padding: 77px 62px 53px 53px;
+
+    &--slimming {
+      &::before {
+        content: url("../img/cat_slimming_tablet.png");
+        top: 81px;
+        right: 62px;
+        width: 200px;
+        height: 211px;
+      }
+    }
+
+    &--weight {
+      &::before {
+        content: url("../img/cat_weight_tablet.png");
+        top: 91px;
+        right: 28px;
+        width: 268px;
+        height: 200px;
+      }
+    }
+  }
+
+  .program__title {
+    margin-bottom: 24px;
+    padding-left: 0;
+  }
+
+  .program__description {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 340px;
+    margin-bottom: 48px;
+    padding-bottom: 0;
+    color: $special-dark-grey;
+    border-bottom: none;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    padding: 77px 52px 55px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &--slimming {
+      &::before {
+        content: url("../img/cat_slimming_desktop.png");
+        top: 41px;
+        left: 52px;
+        width: 100px;
+        height: 108px;
+      }
+    }
+
+    &--weight {
+      &::before {
+        content: url("../img/cat_weight_desktop.png");
+        top: 47px;
+        left: 52px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .program__title {
+    padding-left: 214px;
+    margin-bottom: 73px;
+  }
+
+  .program__description {
+    max-width: 467px;
+    margin-right: 0;
+    margin-bottom: 23px;
+  }
 }
