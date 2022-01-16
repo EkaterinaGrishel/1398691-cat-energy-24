@@ -1,0 +1,37 @@
+.radio-input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  background: $basic-white;
+  border: 1px solid $special-grey-3;
+  border-radius: 50%;
+}
+
+.radio-input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 3px;
+  width: 13.5px;
+  height: 13.5px;
+  background-color: $basic-green;
+  border: 1px solid $basic-green;
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .radio-input + label::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .radio-input:checked + label::after {
+    width: 18px;
+    height: 18px;
+    left: 11px;
+    top: 6px;
+  }
+}

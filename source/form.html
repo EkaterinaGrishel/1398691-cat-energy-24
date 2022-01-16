@@ -13,7 +13,7 @@
   <a class="page-header__logo" href="index.html">
     <img src="img/header-logo-mobile.svg" width="101" height="18" alt="Кэт энерджи»">
   </a>
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--closed main-nav--nojs ">
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
@@ -32,7 +32,7 @@
 </header>
 
 <main class="page-main page-main--inner">
-  <section class="page-form container">
+  <section class="page-form container container--form">
     <h1 class="page-form__title">Подбор программы</h1>
     <p class="page-form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
@@ -71,16 +71,16 @@
         </ul>
       </fieldset>
 
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--contact">
         <legend class="form__group-title">Контактные данные (владельца кота)</legend>
         <ul class="form__list list-reset">
-          <li class="form__contact-item text-field">
+          <li class="form__contact-item text-field input-icon input-icon--email">
             <label class="text-field__label" for="email">E-mail:*</label>
             <input class="text-field__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
           </li>
-          <li class="form__contact-item">
+          <li class="form__contact-item text-field input-icon input-icon--phone">
             <label class="text-field__label" for="phone">Телефон:*</label>
-            <input class="text-field__input" id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+            <input class="text-field__input " id="phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
           </li>
         </ul>
       </fieldset>
@@ -89,7 +89,8 @@
         <legend class="form__group-title">Комментарий</legend>
         <div class="text-field textarea">
           <label>
-            <textarea class="text-field__input"
+            <textarea class="text-field__input text-field__input--textarea"
+                      rows ="6"
                       name="habits"
                       id="habits"
                       placeholder="Расскажите обо всех повадках кота"
@@ -98,7 +99,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="form__group">
+      <fieldset class="form__group form__group--additionally">
         <legend class="form__group-title">Дополнительно</legend>
         <ul class="form__info-list list-reset">
           <li class="form__info-item">
@@ -119,14 +120,14 @@
           </li>
         </ul>
       </fieldset>
-      <button class="form__button button button--primary" type="submit">Отправить заявку</button>
-      <p class="form__note">*— Обязательные поля</p>
+        <button class="form__button button button--primary" type="submit">Отправить заявку</button>
+        <p class="form__note">*— Обязательные поля</p>
     </form>
   </section>
 </main>
 
 <footer class="page-footer">
-  <div class="contacts">
+  <div class="contacts contacts--background">
     <div class="contacts__wrapper container">
       <h4 class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h4>
       <p class="contacts__text">
@@ -166,7 +167,6 @@
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16.5 1.83325H13.75C12.5344 1.83325 11.3686 2.30674 10.5091 3.14957C9.64956 3.99239 9.16667 5.1355 9.16667 6.32743V9.02394H6.41667V12.6193H9.16667V19.81H12.8333V12.6193H15.5833L16.5 9.02394H12.8333V6.32743C12.8333 6.08905 12.9299 5.86042 13.1018 5.69186C13.2737 5.52329 13.5069 5.4286 13.75 5.4286H16.5V1.83325Z" stroke="#666666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-
         </li>
       </ul>
       <div class="footer__copyright copyright">

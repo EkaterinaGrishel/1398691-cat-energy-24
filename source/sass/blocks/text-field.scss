@@ -1,12 +1,36 @@
+.text-field {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  position: relative;
+}
+
+.text-field__label {
+  margin-right: 13px;
+  white-space: nowrap;
+}
+
 .text-field__input {
   font-family: $custom-font;
   font-size: 16px;
   text-transform: uppercase;
   color: $special-dark-grey;
-  outline: 1px solid $special-grey-2;
+  border: 1px solid $special-grey-2;
   padding: 11px 13px;
+  width: 100%;
+
+  &--textarea {
+    resize: none;
+  }
 
   &::placeholder {
     color: $special-dark-grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .text-field__input {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

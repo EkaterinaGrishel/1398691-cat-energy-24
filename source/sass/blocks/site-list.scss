@@ -34,14 +34,17 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item {
-    &--active {
+    &--active-index {
       border-bottom: 2px solid $basic-white;
       z-index: 3;
+    }
+
+    &--index a {
+      color: $basic-white;
     }
   }
 
   .site-list__item a {
-    color: $basic-white;
     font-size: 20px;
     line-height: 30px;
     padding-top: 0;

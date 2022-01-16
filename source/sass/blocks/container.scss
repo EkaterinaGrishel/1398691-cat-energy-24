@@ -7,5 +7,9 @@
 @media (min-width: $tablet-width) {
   .container {
     padding: 0 30px;
+
+    &--form {
+      padding: 0 70px;
+    }
   }
 }

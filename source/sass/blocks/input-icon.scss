@@ -1,0 +1,25 @@
+.input-icon {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 13px;
+    background-repeat: no-repeat;
+  }
+
+  &--email {
+    &::after {
+      top: 20px;
+      background-image: url("../img/icons/icon_email.svg");
+    }
+  }
+
+  &--phone {
+    &::after {
+      background-image: url("../img/icons/icon_phone.svg");
+      right: 11px;
+    }
+  }
+}
