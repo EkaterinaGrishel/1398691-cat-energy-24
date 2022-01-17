@@ -1,6 +1,10 @@
 .contacts {
   padding-top: 26px;
   padding-bottom: 26px;
+
+  &--background {
+    background-color: $basic-grey-2;
+  }
 }
 
 .contacts__title {
@@ -50,7 +54,7 @@
     width: 565px;
     height: 198px;
     top: 95px;
-    left: 7%;
+    left: 10%;
     z-index: 3;
     background: $basic-white;
     padding: 0;

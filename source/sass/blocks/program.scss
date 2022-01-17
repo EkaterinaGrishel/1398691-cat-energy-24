@@ -59,10 +59,16 @@
   position: relative;
 
   &::after {
-    content: url("../img/icons/arrow.svg");
+    content: "";
     position: absolute;
-    display: inline-block;
-    margin-left: 15px;
+    height: 10px;
+    width: 32px;
+    background-image: url("../img/icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
   }
 }
 
@@ -92,6 +98,8 @@
   }
 
   .program__title {
+    font-size: 36px;
+    line-height: 36px;
     margin-bottom: 24px;
     padding-left: 0;
   }
@@ -114,18 +122,22 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    padding: 77px 52px 55px;
+    padding: 77px 52px 55px 51px;
 
     &:not(:last-child) {
       margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      left: 52px;
+      width: 100px;
     }
 
     &--slimming {
       &::before {
         content: url("../img/cat_slimming_desktop.png");
         top: 41px;
-        left: 52px;
-        width: 100px;
         height: 108px;
       }
     }
@@ -134,9 +146,7 @@
       &::before {
         content: url("../img/cat_weight_desktop.png");
         top: 47px;
-        left: 52px;
-        width: 100px;
-        height: 100px;
+        height: 108px;
       }
     }
   }

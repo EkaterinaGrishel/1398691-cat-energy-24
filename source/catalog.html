@@ -9,11 +9,11 @@
 </head>
 
 <body class="page__body">
-<header class="page-header container">
+<header class="page-header page-header--inner container">
   <a class="page-header__logo" href="index.html">
     <img src="img/header-logo-mobile.svg" width="101" height="18" alt="Кэт энерджи»">
   </a>
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">
         Открыть меню
@@ -36,14 +36,14 @@
 <main class="page-main page-main--inner">
   <section class="catalog container">
     <h1 class="catalog__title">Каталог продукции</h1>
-    <div class="product-all">
+    <div class="catalog__list">
       <article class="product">
         <a class="product__image">
           <img src="img/products/catalog-1-desktop 1.png" width="68" height="86" alt="Cat Energy PRO 500 г">
         </a>
         <div class="product__description">
           <a href="#">
-            <h2 class="product__title">Cat Energy<br> PRO 500 г</h2>
+            <h2 class="product__title">Cat Energy<br> PRO<br> 500 г</h2>
           </a>
           <dl class="product__list">
             <div class="product__item">
@@ -69,7 +69,7 @@
         </a>
         <div class="product__description">
           <a href="#">
-            <h2 class="product__title">Cat Energy<br> PRO 1000 г</h2>
+            <h2 class="product__title">Cat Energy<br> PRO<br> 1000 г</h2>
           </a>
           <dl class="product__list">
             <div class="product__item">
@@ -95,7 +95,7 @@
         </a>
         <div class="product__description">
           <a href="#">
-            <h2 class="product__title">Cat Energy<br> PRO 500 г</h2>
+            <h2 class="product__title">Cat Energy<br> PRO<br> 500 г</h2>
           </a>
           <dl class="product__list">
             <div class="product__item">
@@ -121,7 +121,7 @@
         </a>
         <div class="product__description">
           <a href="#">
-            <h2 class="product__title">Cat Energy<br> PRO 1000 г</h2>
+            <h2 class="product__title">Cat Energy<br> PRO<br> 1000 г</h2>
           </a>
           <dl class="product__list">
             <div class="product__item">
@@ -147,7 +147,7 @@
         </a>
         <div class="product__description">
           <a href="#">
-            <h2 class="product__title">Cat Energy<br> SLIM 500 г</h2>
+            <h2 class="product__title">Cat Energy<br> SLIM<br> 500 г</h2>
           </a>
           <dl class="product__list">
             <div class="product__item">
@@ -173,7 +173,7 @@
         </a>
         <div class="product__description">
           <a href="#">
-            <h2 class="product__title">Cat Energy<br> SLIM 1000 г</h2>
+            <h2 class="product__title">Cat Energy<br> SLIM<br> 1000 г</h2>
           </a>
           <dl class="product__list">
             <div class="product__item">
@@ -199,7 +199,7 @@
         </a>
         <div class="product__description">
           <a href="#">
-            <h2 class="product__title">Cat Energy<br> SLIM 500 г</h2>
+            <h2 class="product__title">Cat Energy<br> SLIM<br> 500 г</h2>
           </a>
           <dl class="product__list">
             <div class="product__item">
@@ -221,7 +221,7 @@
 
       <div class="product product--all">
         <a href="#">
-          <h2 class="product__title">Показать еще 100500 товаров</h2>
+          <h2 class="product__title product__title--all">Показать еще<br> 100500 товаров</h2>
         </a>
         <p class="product__text">На самом деле вкусов гораздо больше!</p>
         <a href="#" class="product__button button button--secondary">Показать все</a>
@@ -248,7 +248,7 @@
       <li class="additional-products__item additional-product">
         <h4 class="additional-product__title">Молоко</h4>
         <span class="additional-product__text">1 литр</span>
-        <span class="additional-product__item-price">100 Р.</span>
+        <span class="additional-product__price">100 Р.</span>
         <a href="#" class="additional-product__button button button--primary">Заказать</a>
       </li>
       <li class="additional-products__item additional-product">
@@ -258,15 +258,15 @@
         <a href="#" class="additional-product__button button button--primary">Заказать</a>
       </li>
     </ul>
-      <div class="promotion__wrapper">
-        <h3 class="promotion__title">Закажите все<br> и получите чехол для<br> кота в подарок!</h3>
+      <div class="promotion">
+        <h3 class="promotion__text">Закажите все<br> и получите чехол для<br> кота в подарок!</h3>
       </div>
     </div>
   </section>
 </main>
 
 <footer class="page-footer">
-  <div class="contacts">
+  <div class="contacts contacts--background">
     <div class="contacts__wrapper container">
       <h4 class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h4>
       <p class="contacts__text">

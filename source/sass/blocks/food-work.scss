@@ -3,12 +3,6 @@
   padding-bottom: 49px;
 }
 
-.food-work__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .food-work__item {
   margin-left: 80px;
   position: relative;
@@ -23,34 +17,34 @@
     color: $basic-white;
     width: 60px;
     height: 60px;
-    line-height: 80px;
-    text-align: center;
-    font-size: 20px;
     left: -80px;
+    top: 0;
     background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--leaf {
     &::before {
-      content: url("../img/icons/icon_leaf.svg");
+      background-image: url("../img/icons/icon_leaf.svg");
     }
   }
 
   &--tub {
     &::before {
-      content: url("../img/icons/icon_tub.svg");
+      background-image: url("../img/icons/icon_tub.svg");
     }
   }
 
   &--eat {
     &::before {
-      content: url("../img/icons/icon_eat.svg");
+      background-image: url("../img/icons/icon_eat.svg");
     }
   }
 
   &--alarm {
     &::before {
-      content: url("../img/icons/icon_alarm.svg");
+      background-image: url("../img/icons/icon_alarm.svg");
     }
   }
 }
@@ -90,34 +84,37 @@
     &::after {
       content: "";
       position: absolute;
-      top: 30px;
+      font-family: $custom-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey-2;
+      top: 0;
       right: 0;
-      left: 120px;
-      height: 230px;
+      left: 115px;
       z-index: -1;
     }
 
     &--leaf {
       &::after {
-        content: url("../img/1.png");
+        content: "1";
       }
     }
 
     &--tub {
       &::after {
-        content: url("../img/2.png");
+        content: "2";
       }
     }
 
     &--eat {
       &::after {
-        content: url("../img/3.png");
+        content: "3";
       }
     }
 
     &--alarm {
       &::after {
-        content: url("../img/4.png");
+        content: "4";
       }
     }
   }

@@ -1,6 +1,10 @@
 .page-header {
   padding-top: 10px;
   text-align: center;
+
+  &--inner {
+    border-bottom: 1px solid $basic-grey;
+  }
 }
 
 .page-header__logo {
@@ -16,6 +20,10 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 24px;
+
+    &--inner {
+      border-bottom: none;
+    }
   }
 }
 

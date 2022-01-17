@@ -24,3 +24,28 @@
   margin: 0;
   margin-bottom: 39px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-form {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .page-form__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  .page-form__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form {
+    padding-top: 75px;
+  }
+}
