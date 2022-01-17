@@ -18,9 +18,11 @@
   border: 1px solid $special-grey-2;
   padding: 11px 13px;
   width: 100%;
+  outline: none;
 
   &--textarea {
     resize: none;
+    height: 174px;
   }
 
   &::placeholder {

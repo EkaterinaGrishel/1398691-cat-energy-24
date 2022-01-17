@@ -9,7 +9,7 @@
   font-weight: normal;
   margin: 0 0 19px;
   padding-bottom: 41px;
-  border-bottom: 1px solid $exrra-grey;
+  border-bottom: 1px solid $extra-grey;
   box-sizing: border-box;
 }
 
@@ -17,6 +17,13 @@
   .catalog {
     padding-top: 64px;
     margin-bottom: 68px;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
   }
 
   .catalog__title {
@@ -36,5 +43,12 @@
 
   .catalog__title {
     padding-bottom: 84px;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 80px;
+    grid-row-gap: 63px;
   }
 }

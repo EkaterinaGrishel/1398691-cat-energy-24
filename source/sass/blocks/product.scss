@@ -4,8 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 13px;
-  align-items: end;
-  border-bottom: 1px solid $exrra-grey;
+  border-bottom: 1px solid $extra-grey;
   position: relative;
 
   &--all {
@@ -31,7 +30,6 @@
 
 .product__image {
   text-align: center;
-  align-self: end;
 }
 
 .product__title {
@@ -56,9 +54,11 @@
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
+  margin: 0;
 }
 
 .product__item {
+  margin: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -78,34 +78,43 @@
   .product {
     margin-bottom: 0;
     text-align: center;
-    padding: 38px;
-    max-width: 324px;
+    padding: 8px 36px 39px;
     grid-template-columns: 1fr;
+    grid-row-gap: 0;
     border-bottom: none;
     background: linear-gradient(to bottom, $basic-white 0%, $basic-white 81px, $basic-grey-2 81px);
 
     &--all {
+      align-self: end;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
       background: $basic-white;
-      outline: 2px solid $basic-grey-2;
-      box-sizing: border-box;
-      padding-top: 264px;
+      border: 2px solid $basic-grey-2;
       text-align: center;
       margin-bottom: 0;
+      min-height: 431px;
 
       &::before {
         background-image: url("../img/icons/plus.svg");
         background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60px;
         width: 60px;
         height: 60px;
-        top: 125px;
+        top: 51px;
         left: 50%;
-        right: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%);
       }
     }
   }
 
   .product__image {
+    display: flex;
+    height: 196px;
+    align-items: end;
+    justify-content: center;
     margin-bottom: 34px;
   }
 
@@ -119,22 +128,37 @@
 
   .product__title {
     font-size: 20px;
-    line-height: 22px;
-    margin-top: 23px;
+    line-height: 23px;
+    margin-bottom: 23px;
+
+    &--all {
+      line-height: 22px;
+      margin-bottom: 23px;
+    }
   }
 
   .product__text {
     font-size: 16px;
     line-height: 18px;
+    margin-top: 0;
     margin-bottom: 87px;
   }
 
   .product__list {
     font-size: 16px;
+    margin-bottom: 33px;
   }
 
   .product__item {
     border-bottom: 1px solid $special-grey-3;
-    padding: 9px 0;
+    padding: 7px 0 9px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  .product__button {
+    width: 100%;
   }
 }

@@ -34,6 +34,7 @@
   color: $basic-black;
   text-transform: uppercase;
   border: 1px solid $special-grey-3;
+  border-radius: 5%;
   padding: 14px 20px 28px;
   display: block;
 }
@@ -74,7 +75,7 @@
 @media (min-width: $tablet-width) {
   .example {
     background-image: linear-gradient(to bottom, $basic-white 0%, $basic-white 619px, $special-grey 619px);
-    border-top: 1px solid $exrra-grey;
+    border-top: 1px solid $extra-grey;
     padding: 43px 0 56px;
   }
 
@@ -148,7 +149,8 @@
   }
 
   .example__wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 432px 1fr;
   }
 
   .example__block {
@@ -185,7 +187,7 @@
   }
 
   .example__slider {
-    margin-top: 0;
+    margin: 0;
   }
 
   .example__slider-image {

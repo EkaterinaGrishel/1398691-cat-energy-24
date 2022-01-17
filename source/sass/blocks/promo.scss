@@ -26,9 +26,8 @@
   margin-bottom: 29px;
 }
 
-.promo__image img {
-  width: 100%; // TODO посмотри здесь ширину
-  height: 100%;
+.promo__image {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -56,12 +55,16 @@
   .promo__image {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    margin-left: -355px;
-    margin-top: -305px;
-    width: 709px; // TODO посмотри здесь ширину без стр. 30 не работает
+    left: 30px;
+    max-width: calc(100% - 60px);
     height: 609px;
     z-index: -1;
+  }
+
+  .promo__image img {
+    width: 100%;// TODO посмотри здесь ширину
+    height: 100%;
+    object-fit: contain;
   }
 
   .promo__button {
