@@ -112,8 +112,7 @@
 
   .product__image {
     display: flex;
-    height: 196px;
-    align-items: end;
+    min-height: 196px;
     justify-content: center;
     margin-bottom: 34px;
   }
