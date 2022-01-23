@@ -1,20 +1,35 @@
 .page-header {
   padding-top: 10px;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
 
   &--inner {
     border-bottom: 1px solid $basic-grey;
   }
 }
 
+.page-header__logo-img {
+  padding-top: 10px;
+}
+
 .page-header__logo {
   display: block;
   align-items: center;
-  padding-top: 20px;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__logo-img {
+    display: none;
+  }
+
+  .page-header__logo {
+    padding-top: 5px;
+  }
+
   .page-header {
     display: flex;
     flex-direction: row;
@@ -37,12 +52,19 @@
       height: 694px;
       background-image:
         url("../img/promo-desktop.png"),
-        linear-gradient(to right, rgba($basic-green, 0.85) 0%, rgba($basic-green, 0.85) 100%);
+        linear-gradient(to right, $extra-green 0%, $extra-green 100%);
       background-repeat: no-repeat;
       background-position: right;
       position: absolute;
       right: 0;
       top: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          url("../img/promo-desktop@2x.png"),
+          linear-gradient(to right, $extra-green 0%, $extra-green 100%);
+        background-size: cover;
+      }
     }
   }
 

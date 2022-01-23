@@ -4,14 +4,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="favicons">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
 <header class="page-header page-header--index container">
+  <img class="page-header__logo-img" src="img/logo-mobile.png" alt="Кэт энерджи">
   <a class="page-header__logo" href="index.html">
-    <img src="img/header-logo-mobile.svg" width="101" height="18" alt="Кэт энерджи">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
+      <source media="(min-width:768px)" srcset="img/logo-tablet.png">
+      <img src="img/header-logo-mobile.svg" alt="Кэт энерджи">
+    </picture>
   </a>
   <nav class="main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle" type="button">
@@ -37,7 +48,11 @@
     <h2 class="promo__slogan">Функциональное<br> питание для котов</h2>
     <p class="promo__text">Занялся собой? Займись котом!</p>
     <div class="promo__image">
-    <img src="img/can-mobile.png" width="280" height="270" alt="Банка с кормом">
+      <picture>
+        <source media="(min-width:1280px)" srcset="img/can-desktop.png 1x, img/can-desktop@2x.png 2x">
+        <source media="(min-width:768px)" srcset="img/can-tablet.png 1x, img/can-tablet@2x.png 2x">
+        <img src="img/can-mobile.png" srcset="img/can-mobile@2x.png 2x" alt="Банка с кормом">
+      </picture>
     </div>
     <a class="promo__button button button--primary" href="form.html">Подобрать программу</a>
   </section>
@@ -103,7 +118,10 @@
       </div>
       <div class="example__slider">
         <div class="example__slider-image">
-          <img src="img/before-cat.png" width="280" height="232" alt="Кот большой">
+          <picture>
+            <source media="(min-width:768px)" srcset="img/before-cat-tablet.png 1x, img/before-cat-tablet.png 2x ">
+            <img src="img/before-cat-mobile.png" alt="Кот большой">
+          </picture>
         </div>
         <div class="example__wrapper slider">
           <button class="slider__button button" type="button">Было</button>

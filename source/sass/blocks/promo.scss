@@ -9,6 +9,13 @@
   text-align: center;
   padding-top: 27px;
   padding-bottom: 20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../img/promo-mobile@2x.png"),
+      linear-gradient(to bottom, $special-green 0%, $special-green 302px, $basic-white 302px);
+    background-size: auto 302px;
+  }
 }
 
 .promo__slogan {
