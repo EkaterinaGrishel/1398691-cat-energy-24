@@ -14,6 +14,15 @@
   display: block;
   padding-bottom: 32px;
   margin: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {

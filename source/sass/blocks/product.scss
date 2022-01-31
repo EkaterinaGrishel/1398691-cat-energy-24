@@ -17,7 +17,7 @@
       content: "";
       position: absolute;
       font-size: 30px;
-      background-image: url("../img/icons/plus.svg");
+      background-image: url("../img/plus.svg");
       width: 30px;
       height: 30px;
       top: 25px;
@@ -97,7 +97,7 @@
       min-height: 431px;
 
       &::before {
-        background-image: url("../img/icons/plus.svg");
+        background-image: url("../img/plus.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 60px;

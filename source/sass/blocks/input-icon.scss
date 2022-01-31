@@ -1,25 +1,14 @@
 .input-icon {
-  &::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 50%;
-    right: 13px;
-    transform: translateY(-50%);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
 
   &--email {
-    &::after {
-      background-image: url("../img/icons/icon_email.svg");
-    }
-  }
-
-  &--phone {
-    &::after {
-      background-image: url("../img/icons/icon_phone.svg");
-    }
+    fill: none;
   }
 }

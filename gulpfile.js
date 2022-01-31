@@ -92,6 +92,7 @@ export const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    'source/*.webmanifest'
   ], {
     base: 'source'
   })
@@ -102,13 +103,13 @@ export const copy = (done) => {
 
 // Clean
 
-const clean = () => {
+export const clean = () => {
   return del('build');
 };
 
 // Server
 
-const server = (done) => {
+export const server = (done) => {
   browser.init({
     server: {
       baseDir: 'build'
@@ -122,14 +123,14 @@ const server = (done) => {
 
 // Reload
 
-const reload = (done) => {
+export const reload = (done) => {
   browser.reload();
   done();
 }
 
 // Watcher
 
-const watcher = () => {
+export const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));

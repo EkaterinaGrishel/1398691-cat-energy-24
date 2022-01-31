@@ -20,6 +20,18 @@
   width: 100%;
   outline: none;
 
+  &:hover {
+    border: 1px solid $special-grey-3;
+  }
+
+  &:focus {
+    border: 1px solid $special-dark-grey;
+  }
+
+  &--error {
+    border: 1px solid $error-red;
+  }
+
   &--textarea {
     resize: none;
     height: 174px;
@@ -28,6 +40,10 @@
   &::placeholder {
     color: $special-dark-grey;
   }
+}
+
+.text-field__input:focus + svg {
+  color: $basic-green;
 }
 
 @media (min-width: $tablet-width) {

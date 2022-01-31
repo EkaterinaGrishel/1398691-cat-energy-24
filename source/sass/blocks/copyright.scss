@@ -4,7 +4,22 @@
   line-height: 19px;
   color: $special-dark-grey;
   padding-top: 22px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.copyright__link svg {
+  margin-left: 22px;
+}
+
+.copyright__link:hover svg,
+.copyright__link:focus svg {
+  color: $basic-green;
 }
 
 @media (min-width: $tablet-width) {

@@ -63,12 +63,21 @@
     position: absolute;
     height: 10px;
     width: 32px;
-    background-image: url("../img/icons/arrow.svg");
+    background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
     top: 50%;
     transform: translateY(-50%);
     right: -50px;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1.3);
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

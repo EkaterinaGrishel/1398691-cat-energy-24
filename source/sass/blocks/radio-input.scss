@@ -1,3 +1,7 @@
+.radio-input {
+  cursor: pointer;
+}
+
 .radio-input + label::before {
   content: "";
   position: absolute;
@@ -8,6 +12,15 @@
   background: $basic-white;
   border: 1px solid $special-grey-3;
   border-radius: 50%;
+}
+
+.radio-input + label:hover::before,
+.radio-input + label:focus::before {
+  border: 1px solid $special-grey-4;
+}
+
+.radio-input + label:active::before {
+  opacity: 0.3;
 }
 
 .radio-input:checked + label::after {
