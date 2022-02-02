@@ -159,5 +159,16 @@
 
   .product__button {
     width: 100%;
+    padding: 9px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    padding: 0px 36px 39px;
+  }
+
+  .product__list {
+    margin-bottom: 28px;
   }
 }
