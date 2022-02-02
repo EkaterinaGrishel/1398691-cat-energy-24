@@ -63,7 +63,7 @@
     @media (min-width: $desktop-width) {
       left: 50%;
       right: 50%;
-      width: 100vw;
+      width: 110vw;
       margin-left: -50vw;
       margin-right: -50vw;
     }
@@ -254,8 +254,12 @@
 
     &--contact {
       margin-top: 69px;
-      margin-bottom: 75px;
+      margin-bottom: 40px;
     }
+  }
+
+  .form__group-title {
+    margin-bottom: 73px;
   }
 
   .form__program {

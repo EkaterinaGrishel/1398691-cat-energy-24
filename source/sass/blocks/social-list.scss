@@ -35,10 +35,27 @@
     padding: 0;
   }
 
-  .social-list__svg {
-    &--vkontakte {
-      width: 30px;
-      height: 22px;
+  .social-list__link {
+    &--vk {
+      svg {
+        width: 30px;
+        height: 22px;
+      }
+    }
+
+    &--instagram {
+      svg {
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    &--fb {
+      svg {
+        width: 28px;
+        height: 33px;
+        fill: none;
+      }
     }
   }
 }
