@@ -4,7 +4,7 @@
   justify-content: center;
   border-bottom: 1px solid $basic-grey;
   border-top: 1px solid $basic-grey;
-  padding: 20px 0 21px;
+  padding: 20px 0 16px;
   align-items: center;
 }
 
@@ -33,5 +33,12 @@
   .social-list {
     border: none;
     padding: 0;
+  }
+
+  .social-list__svg {
+    &--vkontakte {
+      width: 30px;
+      height: 22px;
+    }
   }
 }

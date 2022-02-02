@@ -12,7 +12,7 @@
 
 .footer__logo {
   display: block;
-  padding-bottom: 32px;
+  padding-bottom: 27px;
   margin: 0;
 
   &:hover,
@@ -37,5 +37,6 @@
 
   .footer__logo {
     padding-bottom: 0;
+    padding-top: 5px;
   }
 }
