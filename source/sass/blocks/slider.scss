@@ -17,7 +17,7 @@
   background-color: $basic-white;
   box-sizing: border-box;
   border-radius: 6px;
-  margin: 0 13px;
+  margin: 0 23px;
   padding: 3px 6px;
   vertical-align: center;
 }
@@ -35,7 +35,16 @@
     font-size: 20px;
     line-height: 30px;
     padding: 0;
-    border-bottom: 1px dotted $basic-black;
+    border-bottom: 1px dotted rgba($basic-black, 0.4);
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid rgba($basic-black, 0.4);
+    }
+
+    &:active {
+      border-color: transparent;
+    }
   }
 
   .slider__control-scale {
@@ -53,15 +62,20 @@
     border: 1px solid $special-grey-3;
     width: 34px;
     height: 34px;
-    top: -15px;
-    left: 45%;
+    top: 0;
+    left: 47%;
     border-radius: 50%;
     box-sizing: border-box;
+    transform: translateY(-50%);
+
+    &:active {
+      border: 1px solid $basic-green;
+    }
 
     &::before {
       content: "";
-      width: 10px;
-      height: 10px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
       background-color: $basic-green;
       position: absolute;

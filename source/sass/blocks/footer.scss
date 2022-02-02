@@ -12,8 +12,17 @@
 
 .footer__logo {
   display: block;
-  padding-bottom: 32px;
+  padding-bottom: 27px;
   margin: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -28,5 +37,6 @@
 
   .footer__logo {
     padding-bottom: 0;
+    padding-top: 5px;
   }
 }

@@ -17,7 +17,7 @@
       content: "";
       position: absolute;
       font-size: 30px;
-      background-image: url("../img/icons/plus.svg");
+      background-image: url("../img/plus.svg");
       width: 30px;
       height: 30px;
       top: 25px;
@@ -97,7 +97,7 @@
       min-height: 431px;
 
       &::before {
-        background-image: url("../img/icons/plus.svg");
+        background-image: url("../img/plus.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 60px;
@@ -159,5 +159,16 @@
 
   .product__button {
     width: 100%;
+    padding: 9px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    padding: 0px 36px 39px;
+  }
+
+  .product__list {
+    margin-bottom: 28px;
   }
 }

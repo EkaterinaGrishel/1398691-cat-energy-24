@@ -1,6 +1,10 @@
 .food-work {
-  padding-top: 20px;
-  padding-bottom: 49px;
+  padding-top: 22px;
+  padding-bottom: 50px;
+}
+
+.food-work__title {
+  margin-bottom: 42px;
 }
 
 .food-work__item {
@@ -8,7 +12,7 @@
   position: relative;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
   }
 
   &::before {
@@ -18,7 +22,7 @@
     width: 60px;
     height: 60px;
     left: -80px;
-    top: 0;
+    top: -2px;
     background-color: $basic-green;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,25 +30,25 @@
 
   &--leaf {
     &::before {
-      background-image: url("../img/icons/icon_leaf.svg");
+      background-image: url("../img/icon_leaf.svg");
     }
   }
 
   &--tub {
     &::before {
-      background-image: url("../img/icons/icon_tub.svg");
+      background-image: url("../img/icon_tub.svg");
     }
   }
 
   &--eat {
     &::before {
-      background-image: url("../img/icons/icon_eat.svg");
+      background-image: url("../img/icon_eat.svg");
     }
   }
 
   &--alarm {
     &::before {
-      background-image: url("../img/icons/icon_alarm.svg");
+      background-image: url("../img/icon_alarm.svg");
     }
   }
 }
@@ -56,19 +60,19 @@
 @media (min-width: $tablet-width) {
   .food-work {
     padding-top: 45px;
-    padding-bottom: 32px;
+    padding-bottom: 60px;
   }
 
   .food-work__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 137px;
-    grid-row-gap: 37px;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
   }
 
   .food-work__item {
-    padding-top: 151px;
-    padding-bottom: 30px;
+    padding-top: 143px;
+    padding-bottom: 15px;
     text-align: left;
     margin-left: 0;
 
@@ -136,6 +140,6 @@
 
   .food-work {
     padding-top: 71px;
-    padding-bottom: 26px;
+    padding-bottom: 17px;
   }
 }

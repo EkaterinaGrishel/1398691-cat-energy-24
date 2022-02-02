@@ -24,11 +24,50 @@
 }
 
 .form__group-title {
+  position: relative;
+  width: 100%;
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
   text-transform: none;
   margin-bottom: 35px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -40px;
+  }
+
+  span {
+    padding-right: 22px;
+    background-color: $basic-white;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 40px;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 110vw;
+    position: absolute;
+    left: 0;
+    top: 16px;
+    height: 2px;
+    z-index: -1;
+    background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      left: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 50%;
+      right: 50%;
+      width: 100vw;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
+  }
 }
 
 .form__program {
@@ -44,6 +83,15 @@
   position: relative;
   padding-left: 55px;
   margin-bottom: 19px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form__program-label {
+  cursor: pointer;
 }
 
 .form__contact-item {
@@ -59,6 +107,15 @@
   padding-left: 45px;
   margin-bottom: 17px;
   position: relative;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form__info-label {
+  cursor: pointer;
 }
 
 .form__info-checkbox + label::before {
@@ -74,12 +131,17 @@
   margin-right: 18px;
 }
 
+.form__info-checkbox + label:hover::before,
+.form__info-checkbox + label:focus::before {
+  border: 1px solid $special-grey-4;
+}
+
 .form__info-checkbox:checked + label::before {
   content: "";
   position: absolute;
   left: 0;
   top: -5;
-  background-image: url("../img/icons/vector.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
