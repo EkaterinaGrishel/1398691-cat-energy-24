@@ -6,9 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -28,7 +32,7 @@
       </picture>
     </a>
   </div>
-  <nav class="main-nav main-nav--closed">
+  <nav class="main-nav main-nav__index main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle" type="button"></button>
     <span class="visually-hidden">Открыть меню</span>
     <ul class="main-nav__list site-list list-reset">
@@ -52,6 +56,10 @@
     <p class="promo__text">Занялся собой? Займись котом!</p>
     <div class="promo__image">
       <picture>
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/can-desktop.webp 1x, img/can-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/can-tablet.webp 1x, img/can-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/can-mobile.webp 1x, img/can-mobile@2x.webp 2x">
+
         <source media="(min-width:1280px)" srcset="img/can-desktop.png 1x, img/can-desktop@2x.png 2x">
         <source media="(min-width:768px)" srcset="img/can-tablet.png 1x, img/can-tablet@2x.png 2x">
         <img src="img/can-mobile.png" srcset="img/can-mobile@2x.png 2x" alt="Банка с кормом">
@@ -123,17 +131,19 @@
         <div class="example__slider-preview">
           <picture>
             <source media="(min-width:768px)" srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x">
-            <img class="example__cat-fat" src="img/cat-fat-mobile.png" alt="Кот толстый">
+            <img class="example__cat-fat" src="img/cat-fat-tablet.png" alt="Кот до и после">
           </picture>
           <picture>
             <source media="(min-width:768px)" srcset="img/cat-skinny-tablet.png 1x, img/cat-skinny-tablet@2x.png 2x">
-            <img class="example__cat-skinny" src="img/cat-skinny-tablet.png " alt="Кот худой">
+            <img class="example__cat-skinny" src="img/cat-skinny-tablet.png" alt="Кот до и после">
           </picture>
         </div>
-        <div class="example__wrapper slider">
+        <div class="example__wrapper-slider slider">
           <button class="slider__button button" type="button">Было</button>
           <div class="slider__control-scale">
+            <span class="visually-hidden">Переключатель было и стало</span>
             <div class="slider__active">
+              <span class="visually-hidden">Переключатель было и стало активный</span>
             </div>
           </div>
         <button class="slider__button button" type="button">Стало</button>
@@ -159,8 +169,6 @@
   <div class="map">
     <h5 class="visually-hidden">Карта</h5>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1631377334810!5m2!1sru!2sby"
-            width="100%"
-            height="100%"
             style="border: 0;"
             allowfullscreen=""
             loading="lazy"

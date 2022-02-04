@@ -15,8 +15,10 @@
 .social-list__link {
   color: $special-dark-grey;
 
-  &--facebook {
-    fill: none;
+  &--fb {
+    svg {
+      fill: none;
+    }
   }
 
   &:hover,
@@ -30,13 +32,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .social-list__item:not(:last-child) {
+    margin-right: 0;
+  }
+
   .social-list {
     border: none;
     padding: 0;
+    padding-left: 23px;
   }
 
   .social-list__link {
     &--vk {
+      margin-right: 27px;
+
       svg {
         width: 30px;
         height: 22px;
@@ -44,6 +53,8 @@
     }
 
     &--instagram {
+      margin-right: 21px;
+
       svg {
         width: 23px;
         height: 23px;
@@ -54,7 +65,6 @@
       svg {
         width: 28px;
         height: 33px;
-        fill: none;
       }
     }
   }

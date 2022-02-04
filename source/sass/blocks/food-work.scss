@@ -141,5 +141,21 @@
   .food-work {
     padding-top: 71px;
     padding-bottom: 17px;
+    margin-bottom: 26px;
+  }
+
+  .food-work__item {
+    padding-top: 145px;
+    padding-bottom: 15px;
+    text-align: left;
+    margin-left: 0;
+
+    &::before {
+      top: 32px;
+    }
+
+    &::after {
+      top: -10px;
+    }
   }
 }

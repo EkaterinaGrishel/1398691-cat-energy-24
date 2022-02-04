@@ -1,6 +1,12 @@
+.main-nav__list {
+  border-top: 1px solid $extra-grey;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
 .main-nav__toggle {
   position: absolute;
-  top: 12px;
+  top: 21px;
   right: 20px;
   z-index: 2;
   width: 24px;
@@ -14,12 +20,12 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 17px;
-  right: 10px;
+  top: 0;
+  right: 0;
   width: 24px;
   height: 1.5px;
   background-color: $basic-black;
-  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+  box-shadow: 0 7.5px 0 0 $basic-black, 0 15px 0 0 $basic-black;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
@@ -34,9 +40,13 @@
     display: none;
   }
 
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
   .main-nav--opened .main-nav__list {
     position: absolute;
-    top: 66px;
+    top: 60px;
     right: 0;
     left: 0;
     z-index: 10;
@@ -58,10 +68,10 @@
   &::after {
     content: "";
     position: absolute;
-    top: 25px;
+    top: 7px;
     right: 0;
-    width: 20px;
-    height: 2px;
+    width: 24px;
+    height: 1.5px;
     background-color: $basic-black;
   }
 
@@ -86,6 +96,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: 5px;
+    border-top: none;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .main-nav__toggle {
@@ -96,5 +109,11 @@
 @media (min-width: $desktop-width) {
   .main-nav__list {
     padding-top: 19px;
+    justify-content: end;
+  }
+
+  .main-nav__index {
+    padding-left: 10px;
+    max-width: 50%;
   }
 }

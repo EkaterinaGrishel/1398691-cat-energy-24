@@ -1,10 +1,6 @@
 .page-header {
   padding-top: 10px;
-  padding-bottom: 6px;
-
-  &--inner {
-    border-bottom: 1px solid $basic-grey;
-  }
+  padding-bottom: 0;
 }
 
 .page-header__logo {
@@ -27,7 +23,7 @@
 .page-header__logo-img {
   position: absolute;
   top: 0;
-  left: 20px;
+  left: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -56,35 +52,31 @@
 @media (min-width: $desktop-width) {
   .page-header {
     padding-top: 54px;
-  }
 
-  .page-header--index {
-    padding-top: 53px;
+    &--index {
+      padding-top: 53px;
+      justify-content: space-between;
 
-    &::before {
-      content: "";
-      width: 50%;
-      height: 694px;
-      background-image:
-        url("../img/promo-desktop.png"),
-        linear-gradient(to right, $extra-green 0%, $extra-green 100%);
-      background-repeat: no-repeat;
-      background-position: right;
-      position: absolute;
-      right: 0;
-      top: 0;
+      &::before {
+        content: "";
+        width: 50%;
+        height: 694px;
+        background-image: url("../img/promo-desktop.png"), linear-gradient(to right, $extra-green 0%, $extra-green 100%);
+        background-repeat: no-repeat;
+        background-position: right;
+        position: absolute;
+        right: 0;
+        top: 0;
 
-      @media (min-resolution: 2dppx) {
-        background-image:
-          url("../img/promo-desktop@2x.png"),
-          linear-gradient(to right, $extra-green 0%, $extra-green 100%);
-        background-size: cover;
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/promo-desktop@2x.png"), linear-gradient(to right, $extra-green 0%, $extra-green 100%);
+          background-size: cover;
+        }
       }
     }
   }
 
   .page-header__logo {
-    width: 50%;
     text-align: left;
     padding-top: 0;
   }

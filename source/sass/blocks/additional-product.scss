@@ -92,7 +92,7 @@
 
 @media (min-width: $desktop-width) {
   .additional-product {
-    grid-template-columns: 1fr 1fr 1fr 244px;
+    grid-template-columns: 1fr 230px 100px 244px;
     padding: 15px 0;
     border: none;
     border-bottom: 1px solid $special-grey-3;
